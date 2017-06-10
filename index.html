@@ -1,0 +1,426 @@
+ <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Rahul Malhotra</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+    <audio controls loop autoplay hidden="true">
+	  <source src="Music/calmpiano.ogg" type="audio/ogg">
+	</audio> 
+      <nav class="nav-extended indigo">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Rahul Malhotra</a>
+          <a href="#" data-activates="slide-out" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+		  <ul id="slide-out" class="side-nav">
+    		<li><div class="userView" style="padding-top: 1em; padding-bottom:0; ">
+      		<div class="background" style="background: #5c6bc0;">
+		      </div>
+		      <a href="#""><img class="circle" src="Images/me.jpg"></a>
+		      <a href="#"><span class="white-text name">Rahul Malhotra</span></a>
+		      <a style="padding: 0;" href="mailto:rahulmalhotra9620@yahoo.in?Subject=Hello Rahul"><span style="padding: 0;" class="white-text email">rahulmalhotra9620@yahoo.in</span></a>
+		      <a style="padding: 0;" href="https://drive.google.com/uc?authuser=0&id=0ByWP3o-Zfs1LczVwdGhaQWRLYVU&export=download"><span style="padding-bottom: 0;" class="white-text email"><i class="fa fa-download"></i> &nbsp;Download Resume</span></a>
+		    </div></li>
+		    <li><a class="subheader">My Social Profiles</a></li>
+		    <li><a class="waves-effect" target="_blank" href="https://www.facebook.com/rahulmalhotrarocks"><i class="fa fa-facebook"></i>Facebook</a></li>
+		    <li><a class="waves-effect" target="_blank" href="https://plus.google.com/u/0/103837536001324369677"><i class="fa fa-google-plus"></i>Google +</a></li>
+		    <li><div style="margin-top: 0;" class="divider"></div></li>
+		    <li><a class="subheader">My Professional Network</a></li>
+		    <li><a class="waves-effect" target="_blank" href="https://www.linkedin.com/in/rahulmalhotra9620"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
+		    <li><div style="margin-top: 0;" class="divider"></div></li>
+		    <li><a class="subheader">Have a look at My Projects</a></li>
+		    <li><a class="waves-effect" target="_blank" href="https://github.com/rahulmalhotra9620"><i class="fa fa-github"></i>Github</a></li>
+		    <li><div style="margin-top: 0;" class="divider"></div></li>
+		    <li><a class="subheader">My Blog</a></li>
+		    <li><a class="waves-effect" target="_blank" href="http://rahulmalhotraofficial.blogspot.in/"><i class="fa fa-rss"></i>Blog</a></li>
+		  </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li> 
+<!--            <form>
+            <div class="input-field">
+              <input id="search" type="search" required>
+              <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+              <i class="material-icons">close</i>
+            </div>
+            </form>
+-->            </li>
+            <li><a target="_blank" href="https://www.facebook.com/rahulmalhotrarocks">Facebook</a></li>
+            <li><a target="_blank" href="https://github.com/rahulmalhotra9620">Github</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/rahulmalhotra9620">LinkedIn</a></li>
+            <li><a target="_blank" href="https://plus.google.com/u/0/103837536001324369677">Google +</a></li>
+            <li><a target="_blank" href="http://rahulmalhotraofficial.blogspot.in/">Blog</a></li>
+          </ul>
+        </div>
+      </nav>
+      <br />
+      <div class="content">
+      	<div class="row">
+      		<div class="col s12">
+      			<div class="card horizontal indigo lighten-3">
+      				<div class="card-stacked">
+      				<div class="row" style="margin: 0; padding: 0;">
+      					<div class="col s12 m8" style="margin-right: 0; padding-right: 0;">
+				            <div class="card-content" style="padding-right: 0px;">
+								<div class="card" style="margin: 0;">
+								<div class="card-content z-depth-5">
+								<span class="card-title indigo-text accent-4"><center><h4>Full Stack Developer</h4></center></span>
+								</div>
+								   <div class="card-tabs">
+								      <ul id="tabs-swipe-demo" class="tabs tabs-fixed-width">
+								        <li class="tab"><a class="active" href="#about">About</a></li>
+								        <li class="tab"><a href="#projects">Projects</a></li>
+								        <li class="tab" onclick="moveall();"><a href="#skills">Skills</a></li>
+								        <li class="tab"><a href="#workexp">Work Experience</a></li>
+								        <li class="tab"><a href="#achievements">Achievements</a></li>
+								        <li class="tab"><a href="#education">Education</a></li>
+								      </ul>
+								    </div>
+								    <div class="card-content grey lighten-4">
+								      <div id="about" style="font-size: 1.3em;">
+										Hello, I'm Rahul Malhotra.<br /><br /> I'm working as a Full Stack Developer Intern with Daphnis Labs as a part of the technology team, involved in numerous projects in android and web development.
+
+										Fork me on Github to see my latest projects.<br /><br /><br />
+									  </div>
+								      <div id="projects">
+								      <div class="row card">
+									    <div class="tab collection">
+										  <button id="defaultOpen" class="tablinks collection-item" onclick="openCity(event, 'London')">Family Finder</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'Paris')">Contacts Catalogue</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'Tokyo')">Supra Media</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'College')">College Website</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'Server')">Server for Monitoring Client's Health</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'Mess')">Mess Management C Project</button>
+										</div>
+
+										<div id="London" class="tabcontent">
+										  <h4>Family Finder</h4>
+										  <p style="font-size: 1.2em;">
+										  <b>B.Tech Major Project - </b>An (android + web) application to report missing childs on the go. Android App was made for general public to report any missing child found by sending their current location and Web Portal was made for NGO's or other organizations that help by taking necessary action to the missing child request sent by different users.<br /><br />
+										  <b>Link - </b><a target="_blank" href="http://www.familyfinder.16mb.com/Family-Finder/">http://www.familyfinder.16mb.com/Family-Finder/</a>
+										  </p>
+										</div>
+
+										<div id="Paris" class="tabcontent">
+										  <h4>Contacts Catalogue</h4>
+										  <p style="font-size: 1.2em;">
+										  Made an android app to store those contacts which the user don't want to be accessed by messengers like:- Whatsapp, Hike etc. and launched it on Amazon Appstore.<br /><br />
+										  <b>Amazon Appstore Link - </b><a target="_blank" href="https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9">https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9</a><br /><br />	
+										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra9620/ContactsCatalogue">https://github.com/rahulmalhotra9620/ContactsCatalogue</a>
+										  </p><br />
+										</div>
+
+										<div id="Tokyo" class="tabcontent">
+										  <h4>Supra Media Website</h4>
+										  <p style="font-size: 1.2em;">
+										  Worked as a Freelancer and made a wordpress website for outdoor advertising agency.<br /><br />
+										  <b>Link - </b><a target="_blank" href="http://supramedia.in">http://supramedia.in</a>
+										  </p>
+										</div> 
+
+										<div id="College" class="tabcontent">
+										  <h4>College Website</h4>
+										  <p style="font-size: 1.2em;">
+										  Developed a new Website for my college HMRITM with proper admin panel for dynamic changes to be made effectively.<br /><br />
+										  <b>Link - </b><a target="_blank" href="http://www.keepcount.esy.es/hmritm/index.php">http://www.keepcount.esy.es/hmritm/index.php</a>
+										  </p>
+										</div> 
+										<div id="Server" class="tabcontent">
+										  <h4>Server for Monitoring Client's Health</h4>
+										  <p style="font-size: 1.2em;">
+										  <b>Summer Training B.Tech Project - </b>
+										  A new client can initiate a full or partial checkup in which server will ping all/one client respectively to verify that it is connected or not. Chatting between Server and Client and File Transfer was also implemented<br /><br />
+										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra9620/Clients-Health">https://github.com/rahulmalhotra9620/Clients-Health</a>
+										  </p>
+										</div> 
+										<div id="Mess" class="tabcontent">
+										  <h4>Mess Management C Project</h4>
+										  <p style="font-size: 1.2em;">
+										  <b>2nd Semester B.Tech Project - </b>
+										  C Project on Mess Management System. Data File Handling was used and a new concept of <b>due payment</b> was implemented.
+										  <br /><br />
+										  <b>Link - </b><a target="_blank" href="https://github.com/rahulmalhotra9620/Mess-Management-C-Project">https://github.com/rahulmalhotra9620/Mess-Management-C-Project</a>
+										  </p>
+										</div> 
+								      </div>
+								      </div>
+								      <div id="skills">
+								      <div class="row">
+								      	<div class="col s12 m2">HTML & CSS</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress">
+										  <div class="myBar" id="htmlBar">0%</div>
+										</div>								      		
+								      	</div>
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">Php & CodeIgniter Framework</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress" style="margin-top: 1em;">
+										  <div class="myBar" id="phpBar">0%</div>
+										</div>								      		
+								      	</div>
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">React Js</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress">
+										  <div class="myBar" id="reactBar">0%</div>
+										</div>								      		
+								      	</div>
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">BootStrap Framework</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress"  style="margin-top: 0.5em;">
+										  <div class="myBar" id="bootBar">0%</div>
+										</div>								      		
+								      	</div>
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">Android</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress">
+										  <div class="myBar" id="androidBar">0%</div>
+										</div>								      		
+								      	</div>
+								      </div>
+								      <div  class="row" style="font-size: 1.2em;">
+								      	<b>Other Skills Include:</b> Databases (MySQL and MySQL Workbench), Git, OS (Windows and Linux), Programming Languages (C, C++, Core Java, Python) 
+								      </div>
+								      </div>
+								      <div id="workexp">
+								      <div class="row">
+									  <ul class="collection">
+									    <li class="collection-item avatar" style="padding: 0;">
+									    <div class="row" style="margin:0;">
+									    	<div class="col s12 m3" style="">
+									    		<img src="Images/daphnis.png" style="width: 100%; margin-top: 0.6em;" />
+									    	</div>
+									    	<div class="col s12 m9">
+									    		<span class="title"><br /><b>Mar' 2017 - Current : </b>Full Stack Developer Intern at Daphnis Labs, New Delhi</span>
+									    		<p>Working on various projects like: <a target="_blank" href="http://www.feeontime.com">www.feeontime.com</a>  </p>
+									    	</div>
+									    </div>
+									    </li>
+									    <li class="collection-item avatar" style="padding: 0;">
+									    <div class="row" style="margin:0;">
+									    	<div class="col s12 m3" style="">
+									    		<img src="Images/ansyst.png" style="width: 100%; margin-top: 0.6em;" />
+									    	</div>
+									    	<div class="col s12 m9">
+									    		<span class="title"><br /><b>Jun - Jul' 2016 : </b>Android Developer Intern at Ansyst Consulting, Gurgaon</span>
+									    		<p>Made a demo E - Commerce Android app.</p>
+									    	</div>
+									    </div>
+									    </li>
+									  </ul>
+								      </div>
+								      </div>
+								      <div id="achievements">
+								      <div class="row">
+								      	<div class="col s12 m3">
+						      				<div class="row">
+									        <div class="col s12 m12">
+									          <div class="card">
+									            <div class="card-content" style="padding: 0;">
+									            <div class="row" style="padding: 0; margin: 0;">
+									            	<img src="Images/gate.jpg" width="100%" />
+									            </div>
+									            </div>
+									            <div class="card-action">
+									            <b><a class="indigo-text" target="_blank" href="http://www.gate.iitr.ernet.in/"><center>Gate 2017 Qualified</center></a></b>
+									            </div>
+									          </div>
+									        </div>
+									      </div>		      		
+								      	</div>
+								      	<div class="col s12 m3">
+						      				<div class="row">
+									        <div class="col s12 m12">
+									          <div class="card">
+									            <div class="card-content" style="padding: 0;">
+									            <div class="row" style="padding: 0; margin: 0;">
+									            	<img src="Images/indiahacks.jpg" width="100%" />
+									            </div>
+									            </div>
+									            <div class="card-action">
+									            <b><a class="indigo-text" target="_blank" href="https://www.hackerearth.com/indiahacks-2016/"><center>One of the top 20 participant all over India in Fintech Hackathon - IndiaHacks 2016</center></a></b>
+									            </div>
+									          </div>
+									        </div>
+									      </div>		      		
+								      	</div>
+								      	<div class="col s12 m3">
+						      				<div class="row">
+									        <div class="col s12 m12">
+									          <div class="card">
+									            <div class="card-content" style="padding: 0;">
+									            <div class="row" style="padding: 0; margin: 0;">
+									            	<img src="Images/amcat.png" width="100%" />
+									            </div>
+									            </div>
+									            <div class="card-action">
+									            <b><a target="_blank" href="https://www.myamcat.com/" class="indigo-text"><center>Amcat Qualified</center></a></b>
+									            </div>
+									          </div>
+									        </div>
+									      </div>		      		
+								      	</div>
+								      	<div class="col s12 m3">
+						      				<div class="row">
+									        <div class="col s12 m12">
+									          <div class="card">
+									            <div class="card-content" style="padding: 0;">
+									            <div class="row" style="padding: 0; margin: 0;">
+									            	<img src="Images/ieo.jpg" width="100%" />
+									            </div>
+									            </div>
+									            <div class="card-action">
+									            <b><a target="_blank" href="http://www.engineeringolympiad.in/" class="indigo-text"><center>Indian Engineering Olympiad 2016 Qualified</center></a></b>
+									            </div>
+									          </div>
+									        </div>
+									      </div>		      		
+								      	</div>
+								      </div>
+								      </div>
+								      <div  id="education">
+								      <div class="row">
+									  <ul class="collection">
+									    <li class="collection-item avatar" style="padding: 0;">
+									    <div class="row" style="margin:0;">
+									    	<div class="col s12 m3" style="">
+									    		<img src="Images/hmr.jpg" style="width: 100%; margin-top: 0.6em;" />
+									    	</div>
+									    	<div class="col s12 m9">
+									    		<span class="title" style="font-size: 1.2em;"><br />
+									    		<b class="indigo-text">HMR Institute of Technology & Management, Delhi - GGSIPU</b>
+									    		<br /><br />
+									    		<span class="indigo-text text-darken-4">B.Tech</span> - Computer Science & Engineering (80.63%)</span>
+									    	</div>
+									    </div>
+									    </li>
+									    <li class="collection-item avatar" style="padding: 0;">
+									    <div class="row" style="margin:0;">
+									    	<div class="col s12 m3" style="">
+									    		<img src="Images/kps.jpg" style="width: 100%; margin-top: 0.6em;" />
+									    	</div>
+									    	<div class="col s12 m9">
+									    		<span class="title" style="font-size: 1.2em;"><br />
+									    		<b class="indigo-text">Kamal Public Senior Secondary School, Vikaspuri</b>
+									    		<br /><br />
+									    		<span class="indigo-text text-darken-4">12th CBSE</span> - 80% &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="indigo-text text-darken-4">10th CBSE</span> - 9.2 CGPA</span>
+									    	</div>
+									    </div>
+									    </li>
+									  </ul>
+								      </div>
+								      </div>
+								    </div>
+								<div class="card-action">
+								<center>
+								<a target="_blank" href="https://www.facebook.com/rahulmalhotrarocks" class="social-icon"><i class="fa fa-facebook"></i></a>
+								<a target="_blank" href="https://www.linkedin.com/in/rahulmalhotra9620" class="social-icon indigo-text"><i class="fa fa-linkedin"></i></a>
+								<a target="_blank" href="https://github.com/rahulmalhotra9620" class="social-icon indigo-text"><i class="fa fa-github"></i></a>
+								<a target="_blank" href="https://plus.google.com/u/0/103837536001324369677" class="social-icon indigo-text"><i class="fa fa-google-plus"></i></a>
+								<a target="_blank" href="http://rahulmalhotraofficial.blogspot.in/" class="social-icon indigo-text"><i class="fa fa-rss"></i></a>
+								</center>
+								</div>
+								</div>
+	          			    </div>      					      						
+      					</div>
+      					<div class="col s12 m4" style="padding: 0; overflow-x: hidden; height: 100%;">
+		      				<div>
+				      			<img src="Images/frontpic.jpg" width="100%" class="rotateimage" />
+		      				</div>      						
+      					</div>
+      				</div>
+      				</div>
+		        </div>
+          	</div>
+      	</div>
+      </div>
+      <footer class="page-footer indigo" style="padding-left: 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text">Address</h5>
+              <p class="grey-text text-lighten-4">Uttam Nagar, New Delhi</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Contact Me</h5>
+              <ul>
+                <li class="grey-text text-lighten-3"><h6>Mail: <a class="grey-text text-lighten-3" href="mailto:rahulmalhotra9620@yahoo.in?Subject=Hello Rahul" target="_top">rahulmalhotra9620@yahoo.in</a></h6></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+          &copy; Rahul Malhotra
+<!--          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
+          </div>
+        </div>
+      </footer>      
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript">
+
+      function moveall()
+      {
+      	move(document.getElementById("htmlBar"),95);
+      	move(document.getElementById("phpBar"),85);
+      	move(document.getElementById("reactBar"),60);
+      	move(document.getElementById("bootBar"),90);
+		move(document.getElementById("androidBar"),65);     	
+      }
+      function move(elem,progress) {   
+		  var width = 0;
+		  var id = setInterval(frame, 20);
+		  function frame() {
+		    if (width >= progress) {
+		      clearInterval(id);
+		    } else {
+		      width++; 
+		      elem.style.width = width + '%'; 
+		      elem.innerHTML = width * 1  + '%';
+		    }
+		  }
+		}
+        	function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active indigo accent-3", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active indigo accent-3";
+} 
+      document.getElementById("defaultOpen").click();
+        $(document).ready(function(){
+        	$('#tabs-swipe-demo').tabs({ 'swipeable': false });
+        });
+      </script>
+      <script type='text/javascript' src='http://www.midijs.net/lib/midi.js'></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/init.js"></script>
+    </body>
+  </html>
