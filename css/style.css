@@ -110,3 +110,23 @@ div.tab button.active {
     border-left: none;
     height: 320px;
 } 
+
+.frontpiccover {
+   overflow-x: hidden; 
+   padding: 0;
+   height: 100%;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+
+/* Safari and Chrome */
+.mylogo {
+  margin-left: 1.3em;
+}
+
+/* Safari and Chrome */
+.frontpiccover {
+  overflow: hidden;
+}
+
+}
