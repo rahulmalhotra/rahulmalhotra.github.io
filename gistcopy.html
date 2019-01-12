@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gist-It URL Generator</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+	<style type="text/css">
+		.output {
+		  background-color: black;
+		  width: 50%;
+		  padding: 1%;
+		  overflow: scroll;
+		}
+	</style>
+	<script type="text/javascript">
+	function getURLToEmbed() {
+		var githubURL = document.getElementById("githubURL").value;
+		var gistItURL = '&lt;script src="https://gist-it.appspot.com/'+githubURL+'"&gt;&lt;/script&gt;';
+		document.getElementById("gistItURL").innerHTML = gistItURL;
+		if(document.getElementById("autoCopyCheckbox").checked) {
+			copyGistItURL();
+		}
+	}
+	function copyGistItURL() {
+		var gistItURL = document.getElementById("gistItURL");
+		if (window.getSelection) {
+			if (window.getSelection().empty) { // Chrome
+				window.getSelection().empty();
+			} else if (window.getSelection().removeAllRanges) { // Firefox
+				window.getSelection().removeAllRanges();
+			}
+		} else if (document.selection) { // IE?
+			document.selection.empty();
+		}
+		if (document.selection) {
+			var range = document.body.createTextRange();
+			range.moveToElementText(gistItURL);
+			range.select().createTextRange();
+		} else if (window.getSelection) {
+			var range = document.createRange();
+			range.selectNode(gistItURL);
+			window.getSelection().addRange(range);
+		}
+		document.execCommand("copy");
+		alert('Gist-It URL copied to Clipboard');
+		document.getElementById("githubURL").value = "";
+	}
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="container-fluid">
+			<br />
+			<center><h3>Gist-It URL Generator</h3></center><br />
+			<div class="row">
+				<div class="col-sm-12">
+					This is a simple utility application for generating gist-it URL by github URL. For more information about gist-it URL refer to:- <a href="https://gist-it.appspot.com" target="_blank">https://gist-it.appspot.com</a>. This utility application is made by:- Rahul Malhotra (<a href="https://www.twitter.com/rahulcoder" target="_blank">@rahulcoder</a>)
+					<br /><br />
+					<label for="autoCopy"><h6>Automatically copy gist on pasting the URL</h6></label>
+					&nbsp;<input type="checkbox" name="autoCopy" id="autoCopyCheckbox" />
+					<br />
+					<br />
+					<div class="form-group">
+						<label for="githubURL"><h6>Enter Github URL</h6></label>
+						<input id="githubURL" type="text" name="githubURL" onkeyup="getURLToEmbed()" class="form-control" />
+					</div>
+					<br />
+					<h6>Gist-It URL</h6>
+					<div class="output">
+						<code id="gistItURL">Gist-It URL will be displayed here.</code>
+					</div>
+					<br />
+					<button onclick="copyGistItURL()" class="btn btn-primary">Copy URL</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
