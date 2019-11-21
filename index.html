@@ -14,7 +14,7 @@
     <body>
     <audio controls loop autoplay hidden="true">
 	  <source src="Music/calmpiano.ogg" type="audio/ogg">
-	</audio> 
+	</audio>
       <nav class="nav-extended indigo">
         <div class="nav-wrapper">
           <a href="#" class="brand-logo mylogo">Rahul Malhotra</a>
@@ -26,7 +26,7 @@
 		      <a href="#""><img class="circle" src="Images/me.jpg"></a>
 		      <a href="#"><span class="white-text name">Rahul Malhotra</span></a>
 		      <a style="padding: 0;" href="mailto:rahulmalhotra9620@gmail.com?Subject=Hello Rahul"><span style="padding: 0;" class="white-text email">rahulmalhotra9620@gmail.com</span></a>
-		      <a style="padding: 0;" href="https://goo.gl/iGHnGB"><span style="padding-bottom: 0;" class="white-text email"><i class="fa fa-download"></i> &nbsp;Download Resume</span></a>
+		      <a style="padding: 0;" href="https://goo.gl/iGHnGB" target="_blank"><span style="padding-bottom: 0;" class="white-text email"><i class="fa fa-download"></i> &nbsp;Download Resume</span></a>
 		    </div></li>
 		    <li><a class="subheader">My Professional Network</a></li>
 		    <li><a class="waves-effect" target="_blank" href="https://www.linkedin.com/in/rahulcoder"><i class="fa fa-linkedin"></i>LinkedIn</a></li>
@@ -36,7 +36,7 @@
 		    <li><div style="margin-top: 0;" class="divider"></div></li>
 		    <li><a class="subheader">My Blogs</a></li>
 		    <li><a class="waves-effect" target="_blank" href="https://www.medium.com/@rahulcoder"><i class="fa fa-medium"></i>Personal Blog</a></li>
-		    <li><a class="waves-effect" target="_blank" href="https://sfdcstop.blogspot.com/"><i class="fa fa-rss"></i>SFDC Stop Blog</a></li>
+		    <li><a class="waves-effect" target="_blank" href="https://www.sfdcstop.com/"><i class="fa fa-rss"></i>SFDC Stop Blog</a></li>
 		    <li><div style="margin-top: 0;" class="divider"></div></li>
 		    <li><a class="subheader">My Youtube Channel</a></li>
 		    <li><a class="waves-effect" target="_blank" href="https://www.youtube.com/c/SFDCStop"><i class="fa fa-youtube"></i>SFDC Stop</a></li>
@@ -52,7 +52,7 @@
             <li><a target="_blank" href="https://www.github.com/rahulmalhotra">Github</a></li>
             <li><a target="_blank" href="https://www.twitter.com/rahulcoder">Tweet @rahulcoder</a></li>
             <li><a target="_blank" href="https://www.medium.com/@rahulcoder">Personal Blog</a></li>
-            <li><a target="_blank" href="https://sfdcstop.blogspot.com">SFDC Stop Blog</a></li>
+            <li><a target="_blank" href="https://www.sfdcstop.com">SFDC Stop Blog</a></li>
             <li><a target="_blank" href="https://www.youtube.com/c/SFDCStop">SFDC Stop Youtube Channel</a></li>
             <li><a target="_blank" href="https://www.facebook.com/rahulmalhotrarocks">Facebook</a></li>
             <li><a target="_blank" href="https://www.instagram.com/imrahulmalhotra/">Instagram</a></li>
@@ -87,18 +87,34 @@
 								    </div>
 								    <div class="card-content grey lighten-4">
 								      <div id="about" style="font-size: 1.1em;">
-										Hello, I'm Rahul Malhotra.<br /><br /> I'm working as a Software Engineer with <a href="http://saasfocus.com/" style="text-decoration-style: none;" target="_blank">SaasFocus</a> involved in numerous projects in custom as well as standard salesforce development. I am an active member of Trailblazer Community and have been a tech speaker at various community conferences including <a href="http://dreamforce.com/" style="text-decoration-style: none;" target="_blank">Dreamforce 2018</a>, <a href="http://jaipurdevfest.com/" style="text-decoration-style: none;" target="_blank">Jaipur Developer Fest 2018</a> and <a href="http://indiadreamin.in/" style="text-decoration-style: none;" target="_blank">IndiaDreamin 2018</a>. I am also a blogger and youtuber at <a href="https://sfdcstop.blogspot.com" style="text-decoration-style: none;" target="_blank">SFDC Stop</a>. Follow me on 
+										Aloha! <br /><br />I'm Rahul Malhotra, an independent salesforce consultant and a blogger & youtuber at <a href="https://www.sfdcstop.com" style="text-decoration-style: none;" target="_blank">SFDC Stop</a>. I have been associated with my Trailblazer Community since 2017 and have been a tech speaker at various community conferences including <a href="http://dreamforce.com/" style="text-decoration-style: none;" target="_blank">Dreamforce 2018</a>, <a href="http://jaipurdevfest.com/" style="text-decoration-style: none;" target="_blank">Jaipur Developer Fest 2018</a> and <a href="http://indiadreamin.in/" style="text-decoration-style: none;" target="_blank">IndiaDreamin 2018</a>. Follow me on
 										<a href="https://www.github.com/rahulmalhotra" style="text-decoration-style: none;" target="_blank"> github</a> to see my latest open source projects.<br /><br /><br />
 									  </div>
 								      <div id="projects">
 								      <div class="row card">
 									    <div class="tab collection">
+										  <button id="defaultOpen" class="tablinks collection-item" onclick="openCity(event, 'sfdxdeploytool')">SFDX Deploy Tool</button>
+										  <button id="defaultOpen" class="tablinks collection-item" onclick="openCity(event, 'sobjectconvertor')">sObject Convertor</button>
+										  <button class="tablinks collection-item" onclick="openCity(event, 'College')">Foody</button>
 										  <button id="defaultOpen" class="tablinks collection-item" onclick="openCity(event, 'London')">Family Finder</button>
 										  <button class="tablinks collection-item" onclick="openCity(event, 'Paris')">Contacts Catalogue</button>
-										  <button class="tablinks collection-item" onclick="openCity(event, 'Tokyo')">Supra Media</button>
-										  <button class="tablinks collection-item" onclick="openCity(event, 'College')">College Website</button>
 										  <button class="tablinks collection-item" onclick="openCity(event, 'Server')">Server for Monitoring Client's Health</button>
-										  <button class="tablinks collection-item" onclick="openCity(event, 'Mess')">Mess Management C Project</button>
+										</div>
+
+										<div id="sfdxdeploytool" class="tabcontent">
+										  <h5>SFDX Deploy Tool</h5>
+										  <p style="font-size: 1.1em;">A user friendly salesforce deployment tool for windows which can be used to deploy metadata from one salesforce org to another.<br /><br />
+										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/SFDX-Deploy-Tool">https://github.com/rahulmalhotra/SFDX-Deploy-Tool</a><br /><br />
+										  <b>Documentation - </b><a target="_blank" href="https://www.sfdcstop.com/2019/06/sfdx-deploy-tool.html">https://www.sfdcstop.com/2019/06/sfdx-deploy-tool.html</a><br />
+										  </p>
+										</div>
+
+										<div id="sobjectconvertor" class="tabcontent">
+										  <h5>sObject Convertor</h5>
+										  <p style="font-size: 1.1em;">sObject Convertor is a utility application to convert record of one sObject into another sObject in salesforce.<br /><br />
+										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/sObjectConvertor">https://github.com/rahulmalhotra/sObjectConvertor</a><br /><br />
+										  <b>Documentation - </b><a target="_blank" href="https://www.sfdcstop.com/2018/03/sobject-convertor-utility-application.html">https://www.sfdcstop.com/2018/03/sobject-convertor-utility-application.html</a><br />
+										  </p>
 										</div>
 
 										<div id="London" class="tabcontent">
@@ -112,23 +128,19 @@
 										  <h5>Contacts Catalogue</h5>
 										  <p style="font-size: 1.1em;">
 										  Made an android app to store those contacts which the user don't want to be accessed by messengers like:- Whatsapp, Hike etc. and launched it on Amazon Appstore.<br /><br />
-										  <b>Amazon Appstore Link - </b><a target="_blank" href="https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9">https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9</a><br /><br />	
+										  <b>Amazon Appstore Link - </b><a target="_blank" href="https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9">https://www.amazon.com/Code-It-Now-Contacts-Catalogue/dp/B01N6JPEL9</a><br /><br />
 										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/ContactsCatalogue">https://github.com/rahulmalhotra/ContactsCatalogue</a>
 										  </p><br />
 										</div>
 
-										<div id="Tokyo" class="tabcontent">
-										  <h5>Supra Media Website</h5>
-										  <p style="font-size: 1.1em;">
-										  Worked as a Freelancer and made a wordpress website for outdoor advertising agency.<br /><br /></p>
-										</div> 
-
 										<div id="College" class="tabcontent">
-										  <h5>College Website</h5>
+										  <h5>Foody</h5>
 										  <p style="font-size: 1.1em;">
-										  Developed a new Website for my college HMRITM with proper admin panel for dynamic changes to be made effectively.<br /><br />
+										  Capstone project for Android Developer Nanodegree under Google Udacity Android Scholarship 2018.<br /><br />
+										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/Foody">https://github.com/rahulmalhotra/Foody</a><br /><br />
+										  <b>Certification Link - </b><a target="_blank" href="https://confirm.udacity.com/DUK9FD49">https://confirm.udacity.com/DUK9FD49</a><br />
 										  </p>
-										</div> 
+										</div>
 										<div id="Server" class="tabcontent">
 										  <h5>Server for Monitoring Client's Health</h5>
 										  <p style="font-size: 1.1em;">
@@ -136,16 +148,7 @@
 										  A new client can initiate a full or partial checkup in which server will ping all/one client respectively to verify that it is connected or not. Chatting between Server and Client and File Transfer was also implemented<br /><br />
 										  <b>Github Repo. Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/Clients-Health">https://github.com/rahulmalhotra/Clients-Health</a>
 										  </p>
-										</div> 
-										<div id="Mess" class="tabcontent">
-										  <h5>Mess Management C Project</h5>
-										  <p style="font-size: 1.1em;">
-										  <b>2nd Semester B.Tech Project - </b>
-										  C Project on Mess Management System. Data File Handling was used and a new concept of <b>due payment</b> was implemented.
-										  <br /><br />
-										  <b>Link - </b><a target="_blank" href="https://github.com/rahulmalhotra/Mess-Management-C-Project">https://github.com/rahulmalhotra/Mess-Management-C-Project</a>
-										  </p>
-										</div> 
+										</div>
 								      </div>
 								      </div>
 								      <div id="skills">
@@ -154,15 +157,31 @@
 								      	<div class="col s12 m10">
 								      	<div id="myProgress">
 										  <div class="myBar" id="salesforceBar">0%</div>
-										</div>								      		
+										</div>
 								      	</div>
-								      </div>								      
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">Lightning</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress">
+										  <div class="myBar" id="lightningBar">0%</div>
+										</div>
+								      	</div>
+								      </div>
+								      <div class="row">
+								      	<div class="col s12 m2">Apex</div>
+								      	<div class="col s12 m10">
+								      	<div id="myProgress"  style="margin-top: 0.5em;">
+										  <div class="myBar" id="apexBar">0%</div>
+										</div>
+								      	</div>
+								      </div>
 								      <div class="row">
 								      	<div class="col s12 m2">Android</div>
 								      	<div class="col s12 m10">
 								      	<div id="myProgress">
 										  <div class="myBar" id="androidBar">0%</div>
-										</div>								      		
+										</div>
 								      	</div>
 								      </div>
 								      <div class="row">
@@ -170,7 +189,7 @@
 								      	<div class="col s12 m10">
 								      	<div id="myProgress">
 										  <div class="myBar" id="htmlBar">0%</div>
-										</div>								      		
+										</div>
 								      	</div>
 								      </div>
 								      <div class="row">
@@ -178,7 +197,7 @@
 								      	<div class="col s12 m10">
 								      	<div id="myProgress" style="margin-top: 1em;">
 										  <div class="myBar" id="phpBar">0%</div>
-										</div>								      		
+										</div>
 								      	</div>
 								      </div>
 								      <div class="row">
@@ -186,27 +205,11 @@
 								      	<div class="col s12 m10">
 								      	<div id="myProgress">
 										  <div class="myBar" id="reactBar">0%</div>
-										</div>								      		
-								      	</div>
-								      </div>
-								      <div class="row">
-								      	<div class="col s12 m2">React Native</div>
-								      	<div class="col s12 m10">
-								      	<div id="myProgress">
-										  <div class="myBar" id="reactNativeBar">0%</div>
-										</div>								      		
-								      	</div>
-								      </div>
-								      <div class="row">
-								      	<div class="col s12 m2">BootStrap Framework</div>
-								      	<div class="col s12 m10">
-								      	<div id="myProgress"  style="margin-top: 0.5em;">
-										  <div class="myBar" id="bootBar">0%</div>
-										</div>								      		
+										</div>
 								      	</div>
 								      </div>
 								      <div  class="row" style="font-size: 1.1em;">
-								      	<b>Other Skills Include:</b> Databases (MySQL and MySQL Workbench), Git, OS (Windows and Linux), Programming Languages (C, C++, Core Java, Python) 
+								      	<b>Other Skills Include:</b> Databases (MySQL and MySQL Workbench), Git, OS (Windows and Linux), Programming Languages (C, C++, Core Java, Python)
 								      </div>
 								      </div>
 								      <div id="workexp">
@@ -218,8 +221,8 @@
 									    		<img src="Images/saasfocus.png" style="width: 100%; margin-top: 2em;" />
 									    	</div>
 									    	<div class="col s12 m9">
-									    		<span class="title"><br /><b>Jan' 2018 - Present : </b>Software Engineer at SaasFocus, Noida</span>
-									    		<p>Working as a Software Engineer in the core delivery team at SaaSfocus, Noida. Key responsibilities include:- Suggesting solutions and better approach for developing a particular feature. Development of separate modules to be included in project.<br /><br /></p>
+									    		<span class="title"><br /><b>Jan' 2018 - Oct'2019 : </b>Software Engineer at SaasFocus, Noida</span>
+									    		<p>Worked as a Software Engineer in the core delivery team at SaaSfocus, Noida. Also worked as an Integration Lead at SaaSfocus, Australia. Key responsibilities include:- Finalizing solutions for developing a particular feature. Development of separate modules to be included in project. Developing custom lightning components and apex integrations.<br /><br /></p>
 									    	</div>
 									    </div>
 									    </li>
@@ -275,7 +278,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      	<div class="col s12 m3">
 						      				<div class="row">
@@ -291,7 +294,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      	<div class="col s12 m3">
 						      				<div class="row">
@@ -307,7 +310,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      	<div class="col s12 m3">
 						      				<div class="row">
@@ -323,7 +326,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      </div>
 								      <div class="row">
@@ -341,7 +344,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      	<div class="col s12 m3">
 						      				<div class="row">
@@ -357,7 +360,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      	<div class="col s12 m3">
 						      				<div class="row">
@@ -373,7 +376,7 @@
 									            </div>
 									          </div>
 									        </div>
-									      </div>		      		
+									      </div>
 								      	</div>
 								      </div>
 								      </div>
@@ -389,7 +392,7 @@
 									    		<span class="title" style="font-size: 1.2em;"><br />
 									    		<b class="indigo-text">HMR Institute of Technology & Management, Delhi - GGSIPU</b>
 									    		<br /><br />
-									    		<span class="indigo-text text-darken-4">B.Tech</span> - Computer Science & Engineering (80.63%)</span>
+									    		<span class="indigo-text text-darken-4">B.Tech</span> - Computer Science & Engineering (81.4%)</span>
 									    	</div>
 									    </div>
 									    </li>
@@ -423,7 +426,7 @@
 								</center>
 								</div>
 								</div>
-	          			    </div>      					      						
+	          			    </div>
       					</div>
       				</div>
       				</div>
@@ -452,7 +455,7 @@
 <!--          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>-->
           </div>
         </div>
-      </footer>      
+      </footer>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript">
@@ -462,20 +465,20 @@
       	move(document.getElementById("htmlBar"),95);
       	move(document.getElementById("phpBar"),85);
       	move(document.getElementById("salesforceBar"),85);
-      	move(document.getElementById("reactBar"),75);
-      	move(document.getElementById("reactNativeBar"),60);
-      	move(document.getElementById("bootBar"),90);
-		move(document.getElementById("androidBar"),90);     	
+      	move(document.getElementById("reactBar"),80);
+      	move(document.getElementById("lightningBar"),90);
+      	move(document.getElementById("apexBar"),90);
+		move(document.getElementById("androidBar"),75);
       }
-      function move(elem,progress) {   
+      function move(elem,progress) {
 		  var width = 0;
 		  var id = setInterval(frame, 20);
 		  function frame() {
 		    if (width >= progress) {
 		      clearInterval(id);
 		    } else {
-		      width++; 
-		      elem.style.width = width + '%'; 
+		      width++;
+		      elem.style.width = width + '%';
 		      elem.innerHTML = width * 1  + '%';
 		    }
 		  }
@@ -499,7 +502,7 @@
     // Show the current tab, and add an "active" class to the link that opened the tab
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active indigo accent-3";
-} 
+}
       document.getElementById("defaultOpen").click();
         $(document).ready(function(){
         	$('#tabs-swipe-demo').tabs({ 'swipeable': false });
