@@ -1,2 +1,2 @@
-# rahulmalhotra9620.github.io
+# rahulmalhotra.github.io
 My Resume
